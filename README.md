@@ -1,46 +1,26 @@
-Snowranger is working to help low-mobility individuals plan trips in cities, by collecting and presenting information about barriers to passage, such as construction and unplowed snow.  We plan to collect this data from the users themselves using a mobile app. Our ultimate goal is to make this a transportation option for Google transit directions for the end-users, and an enforcement tool and a data source for municipalities.  
+ 
 
 
-## Fire'r up! 
-```bash
-$ workon myVirtualEnv # Virtualenv with python 3.5.0
-$ sudo pip3 install Django # If you don't have Django, get it. 
-$ cd path/to/snowranger
-$ python3 ./src/snowranger/manage.py runserver # http://127.0.0.1:8000/
-```
+## Team Codename Snowranger
+We're working to integrate existing 311 data and services with user-generated advisories in an effort to enable, and make transparent, systems for mainaining civilized life. 
 
-### Find the front end
-```bash
-# The main index.html
-/snowranger/src/snowranger/conditions/static/templates/conditions/snowranger.html
-# Javascript components
-/snowranger/src/snowranger/conditions/static/conditions/(js|css)
-# There is also...
-/snowranger/src/snowranger/static/img # This is where the images live for now. But this will change. 
-```
+Originally begun as an initiative to help enable mobility for low-mobility folk in times of inclement weather (thus: Snowranger), or project has widened in scope to take into consideration the warmer months as well, along with an acknowledgement that mobility, more broadly considered, means __access__. 
 
-### Deploy
-I used the instruction here to set up the webserver:
-http://michal.karzynski.pl/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/
+Existing 311 data references civil complaints of all kinds - from rodent issues to graffitti to potholes to snowplow requests - all of which can make an impact on the accessibility and living conditions in our fair city. 
 
-To deploy new code, 
-```
-$ ssh ubuntu@snowranger.org #Repo admins have private key
-$ sudo su snow
-$ git pull
-$ exit # i.e., go back to user Ubuntu
-$ sudo supervisorctl restart snow
-```
-----
-### Ignore the darn __pycachers__. 
-> http://stackoverflow.com/questions/1470572/gitignore-ignore-any-bin-directory
+## What we're running. 
+- Ionic, for iOS and Web (Android coming soon.)
+- Firebase
+- AngularJS
+- NodeJS
+- Google Maps API
 
-```
-# .gitignore
-__pycache__/
-```
-```
-# So if you want add to ignore some directories in your local repository (which already exist) after editing .gitignore you want to run this on your root dir
-$ git rm --cached -r .
-$ git add .
-```
+## Who is us? 
+- Alex: wants a real job
+- Andrew: weirdly good at math
+- Addu: likes wires and sparky things
+- Edwin: went to a camp about shoes
+- Isaac: has a bigger mustache than you
+- Pooja: is probably somewhere talking to people
+- Anatoli: is on a mountain in the Himalyas drinking tea
+- Ryan: built our demo site!
